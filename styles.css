@@ -1,0 +1,84 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    background-color: whitesmoke;
+}
+
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Top navigation bar */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #b3c2a9; /* Sage green on hover */
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #9caf88; /* Sage green for active link */
+    color: white;
+}
+
+.topnav a.logo {
+    font-weight: bold;
+}
+
+/* Hero section styling */
+.hero-section {
+    position: relative;
+    background-image: url('photos/PromPhoto.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 90%);
+    color: white;
+    font-weight: bold;
+}
+
+/* Button styling */
+#resume-button, #linkedin-button {
+    font-size: 16px;
+    background-color: #9caf88; /* Sage green background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#resume-button:hover, #linkedin-button:hover {
+    background-color: #7a9472; /* Darker sage green on hover */
+}
+
+#linkedin-button {
+    background-image: none; /* Remove background image */
+}
